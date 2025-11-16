@@ -1,8 +1,8 @@
 {
-  "1": "As a critical path test on the login page, it's essential to ensure fundamental user entry points are stable, especially given API client changes.",
-  "2": "This test previously failed on the critical login page and could be directly impacted by backend API client changes or retry logic.",
-  "4": "Saving profile data heavily relies on API interactions and could be directly impacted by the API client error handling changes.",
-  "5": "This test previously failed and its autocomplete functionality is highly likely to depend on backend API calls, making it susceptible to API client changes.",
-  "6": "This test is low priority as a simple UI navigation on the footer, making it least likely to be affected by API client error handling changes.",
-  "3": "While important, dashboard navigation is less likely to be directly impacted by API client error handling compared to data submission or validation, especially since it passed previously."
+  "2": "It previously failed, indicating a current defect that needs immediate re-validation after API client changes.",
+  "1": "As a core login functionality, it's crucial to verify its stability after changes to API client error handling, despite its previous pass.",
+  "5": "This test previously failed and its functionality likely depends on API calls, making it critical to re-verify given the API client changes.",
+  "4": "This test involves saving data via an API, making it important to confirm its continued functionality after API client error handling adjustments.",
+  "3": "Although it previously passed, dashboard navigation could still be indirectly affected by underlying API stability or performance changes.",
+  "6": "This test represents a static UI element less likely to be impacted by API client error handling changes, making it a lower priority."
 }
