@@ -1,0 +1,122 @@
+
+    <html>
+    <head>
+        <title>Agentic AI Test Prioritization Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f4f6f9;
+                padding: 20px;
+            }
+
+            h1 {
+                color: #333;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .timestamp {
+                text-align: center;
+                margin-bottom: 25px;
+                color: #666;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                background: white;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            }
+
+            th {
+                background: #2f3542;
+                color: white;
+                padding: 12px;
+                font-size: 16px;
+            }
+
+            td {
+                padding: 12px;
+                text-align: left;
+                border-bottom: 1px solid #eee;
+            }
+
+            .priority-badge {
+                padding: 6px 12px;
+                color: white;
+                font-weight: bold;
+                border-radius: 6px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Agentic AI Test Prioritization Report</h1>
+        <div class="timestamp">Generated: 2025-11-16 14:38:48</div>
+
+        <h2>Final Ranking</h2>
+        <p><strong>[2, 1, 5, 4, 3]</strong></p>
+
+        <h2>Detailed Testcase Breakdown</h2>
+
+        <table>
+            <tr>
+                <th>Priority</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Component</th>
+                <th>Element</th>
+                <th>Reason</th>
+            </tr>
+    
+            <tr>
+                <td><span class="priority-badge" style="background:#ff6b6b;">#1</span></td>
+                <td>2</td>
+                <td>Username Validation</td>
+                <td>LoginPage</td>
+                <td>textbox</td>
+                <td>This test is prioritized first because it recently failed, making its re-evaluation critical, and the API client error handling changes could directly affect validation. </td>
+            </tr>
+        
+            <tr>
+                <td><span class="priority-badge" style="background:#ffa502;">#2</span></td>
+                <td>1</td>
+                <td>Login Button Click</td>
+                <td>LoginPage</td>
+                <td>button</td>
+                <td>This test is next because it's a core login functionality on a page potentially impacted by the API client changes, ensuring basic user flow still works.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="priority-badge" style="background:#1e90ff;">#3</span></td>
+                <td>5</td>
+                <td>Search Field Autocomplete</td>
+                <td>SearchPage</td>
+                <td>textbox</td>
+                <td>This test is prioritized as it recently failed and autocomplete features frequently depend on API calls, making it susceptible to the API client changes.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="priority-badge" style="background:#1e90ff;">#4</span></td>
+                <td>4</td>
+                <td>Profile Update Save</td>
+                <td>ProfilePage</td>
+                <td>button</td>
+                <td>This test is included next as profile updates typically involve backend API interactions for saving data, making it directly relevant to the API client changes.</td>
+            </tr>
+        
+            <tr>
+                <td><span class="priority-badge" style="background:#1e90ff;">#5</span></td>
+                <td>3</td>
+                <td>Dashboard Navigation</td>
+                <td>Dashboard</td>
+                <td>nav-link</td>
+                <td>This test is ranked last among the priorities to ensure basic navigation functions correctly, although its direct interaction with API error handling might be less intensive than other data-driven tests.</td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    
