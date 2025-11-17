@@ -22,7 +22,7 @@ def load_testcases() -> List[Dict[str, Any]]:
 
 
 def parse_llm_output(text: str) -> List[int]:
-    """Safely parse LLM output like '[1, 2, 3]' into a Python list."""
+    
     try:
         parsed = ast.literal_eval(text)
         if isinstance(parsed, list):

@@ -5,12 +5,12 @@ import json
 
 
 def main() -> None:
-    # Change summary (hardcoded for now)
+    
     change_summary = (
         "Refactor API client error handling and adjust retry logic for transient failures."
     )
 
-    # Load previous feedback (memory)
+    
     feedback_history = load_feedback()
 
     # PRIORITIZE TESTS (LLM + scoring + critic)

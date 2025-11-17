@@ -1,8 +1,8 @@
 {
-  "2": "It previously failed, indicating a current defect that needs immediate re-validation after API client changes.",
-  "1": "As a core login functionality, it's crucial to verify its stability after changes to API client error handling, despite its previous pass.",
-  "5": "This test previously failed and its functionality likely depends on API calls, making it critical to re-verify given the API client changes.",
-  "4": "This test involves saving data via an API, making it important to confirm its continued functionality after API client error handling adjustments.",
-  "3": "Although it previously passed, dashboard navigation could still be indirectly affected by underlying API stability or performance changes.",
-  "6": "This test represents a static UI element less likely to be impacted by API client error handling changes, making it a lower priority."
+  "1": "Login is a fundamental and critical user flow, essential for accessing any part of the application, and could be impacted by underlying API changes.",
+  "2": "This test failed previously and directly relates to user input validation, a process often reliant on API calls that could be impacted by the error handling refactor.",
+  "4": "Profile updates involve crucial data persistence via API calls, making it highly susceptible to the refactor of API client error handling, even though it passed previously.",
+  "5": "This test failed previously and its core functionality, autocomplete, is heavily reliant on rapid API interactions, making it highly vulnerable to the API client changes.",
+  "3": "While important, dashboard navigation passed previously and is less likely to be directly affected by API client error handling unless specific navigation points rely on volatile API data.",
+  "6": "This test passed previously and checks a static link, which is very unlikely to be impacted by changes to API client error handling or retry logic."
 }
