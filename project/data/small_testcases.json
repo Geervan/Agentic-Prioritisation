@@ -1,0 +1,262 @@
+[
+  {
+    "name": "/",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "#username-helper-text",
+    "execution_time": 3.22,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 1
+  },
+  {
+    "name": "/signup",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "#firstName-helper-text",
+    "execution_time": 3.85,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 2
+  },
+  {
+    "name": "/bankaccounts",
+    "component": "ui",
+    "ui_element": "input",
+    "selector": "#bankaccount-bankName-input-helper-text",
+    "execution_time": 3.38,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 3
+  },
+  {
+    "name": "@usersSearch",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": ".MuiBackdrop-root",
+    "execution_time": 3.88,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 4
+  },
+  {
+    "name": "@allUsers",
+    "component": "ui",
+    "ui_element": "input",
+    "selector": "#transaction-create-amount-input-helper-text",
+    "execution_time": 1.97,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 5
+  },
+  {
+    "name": "submits a transaction payment and verifies the deposit for the receiver",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "[data-test=sidenav-user-balance]",
+    "execution_time": 3.3,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 6
+  },
+  {
+    "name": "@createTransaction",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "[data-test=sidenav-user-balance]",
+    "execution_time": 2.22,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 7
+  },
+  {
+    "name": "@updateNotification",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "@preDismissedNotificationCount",
+    "execution_time": 2.01,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 8
+  },
+  {
+    "name": "@publicTransactions",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": ".MuiBackdrop-root",
+    "execution_time": 1.91,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 9
+  },
+  {
+    "name": "transaction-item-",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "[data-test*='transaction-item']",
+    "execution_time": 2.1,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 10
+  },
+  {
+    "name": "closes date range picker modal",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": ".react-calendar",
+    "execution_time": 4.0,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 11
+  },
+  {
+    "name": "@${feed.routeAlias}",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "@unfilteredResults",
+    "execution_time": 1.88,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 12
+  },
+  {
+    "name": "?",
+    "component": "ui",
+    "ui_element": "unknown",
+    "selector": "@unfilteredResults",
+    "execution_time": 3.91,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 13
+  },
+  {
+    "name": "should display user setting form errors",
+    "component": "ui",
+    "ui_element": "input",
+    "selector": "#user-settings-${field}Name-input-helper-text",
+    "execution_time": 3.8,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 14
+  },
+  {
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 3.79,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 15
+  },
+  {
+    "name": "shows onboarding",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 1.86,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 16
+  },
+  {
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 2.5,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 17
+  },
+  {
+    "name": "shows onboarding",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 3.17,
+    "last_result": "fail",
+    "flaky": true,
+    "id": 18
+  },
+  {
+    "name": "shows onboarding",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 1.19,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 19
+  },
+  {
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 1.79,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 20
+  },
+  {
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 3.34,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 21
+  },
+  {
+    "name": "shows onboarding",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 1.61,
+    "last_result": "fail",
+    "flaky": false,
+    "id": 22
+  },
+  {
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 1.02,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 23
+  },
+  {
+    "name": "shows onboarding",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "Get Started",
+    "execution_time": 2.96,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 24
+  },
+  {
+    "name": "verifies signed in user does not have a bank account",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "[data-test=\"sidenav-bankaccounts\"]",
+    "execution_time": 1.62,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 25
+  },
+  {
+    "name": "verifies signed in user does not have any notifications",
+    "component": "ui-auth-providers",
+    "ui_element": "unknown",
+    "selector": "[data-test=\"sidenav-notifications\"]",
+    "execution_time": 3.31,
+    "last_result": "pass",
+    "flaky": false,
+    "id": 26
+  }
+]

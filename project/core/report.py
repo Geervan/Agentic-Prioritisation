@@ -2,12 +2,13 @@ from pathlib import Path
 from datetime import datetime
 import json
 
-def generate_html_report(testcases, final_order, explanations):
-    reports_dir = Path("reports")
-    reports_dir.mkdir(exist_ok=True)
+def generate_html_report(testcases, final_order, explanations, dataset_name: str, validation_result=None):
+    # Create dataset-specific subdirectory under D:/PBL/reports
+    dataset_reports_dir = Path("D:/PBL/reports") / dataset_name
+    dataset_reports_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    report_path = reports_dir / f"report_{timestamp}.html"
+    report_path = dataset_reports_dir / f"report_{dataset_name}_{timestamp}.html"
 
     # Color rules based on priority
     def priority_color(idx):
@@ -70,6 +71,13 @@ def generate_html_report(testcases, final_order, explanations):
                 font-weight: bold;
                 border-radius: 6px;
             }}
+
+            .table-container {{
+                max-height: 600px;
+                overflow-y: auto;
+                border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            }}
         </style>
     </head>
 
@@ -80,8 +88,84 @@ def generate_html_report(testcases, final_order, explanations):
         <h2>Final Ranking</h2>
         <p><strong>{final_order}</strong></p>
 
+        """
+
+    # Add validation metrics FIRST if available
+    if validation_result:
+        apfd_scores = validation_result.get("apfd_scores", {})
+        early_detection = validation_result.get("early_fault_detection", {})
+        wasted_effort = validation_result.get("wasted_effort", 0)
+        time_saved = validation_result.get("time_saved", 0.0)
+        total_tests = validation_result.get("total_tests", 0)
+
+        agentic_apfd = apfd_scores.get("agentic_apfd", 0)
+        random_apfd = apfd_scores.get("random_apfd", 0)
+        fifo_apfd = apfd_scores.get("fifo_apfd", 0)
+        reverse_apfd = apfd_scores.get("reverse_apfd", 0)
+
+        html += f"""
+        <h2>Validation Metrics</h2>
+        <div class="table-container">
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><strong>APFD (Agentic AI)</strong></td>
+                <td>{agentic_apfd:.4f}</td>
+                <td>[Average Percentage of Faults Detected - Higher is better, 0-1 scale]</td>
+            </tr>
+            <tr>
+                <td><strong>APFD (Random Baseline)</strong></td>
+                <td>{random_apfd:.4f}</td>
+                <td>[Random ordering APFD - baseline for comparison]</td>
+            </tr>
+            <tr>
+                <td><strong>APFD (Original Order)</strong></td>
+                <td>{fifo_apfd:.4f}</td>
+                <td>[Original FIFO test order APFD - current status baseline]</td>
+            </tr>
+            <tr>
+                <td><strong>APFD (Reverse Order)</strong></td>
+                <td>{reverse_apfd:.4f}</td>
+                <td>[Worst-case ordering APFD - lower bound comparison]</td>
+            </tr>
+            <tr>
+                <td><strong>Wasted Effort</strong></td>
+                <td>{wasted_effort} passing tests</td>
+                <td>[Passing tests executed before all faults found - Lower is better]</td>
+            </tr>
+            <tr>
+                <td><strong>Time Saved vs Random</strong></td>
+                <td>{time_saved:.2f} seconds</td>
+                <td>[Cumulative execution time savings compared to random ordering]</td>
+            </tr>
+        """
+
+        # Add early fault detection rows
+        if early_detection:
+            for k in sorted(early_detection.keys()):
+                k_percent = round(100 * k / max(1, total_tests), 1)
+                efd_value = early_detection[k]
+                html += f"""
+            <tr>
+                <td><strong>Early Fault Detection @ {k_percent:.0f}%</strong></td>
+                <td>{efd_value:.2f}%</td>
+                <td>[Percentage of failing tests caught in first {k_percent:.0f}% of tests]</td>
+            </tr>
+        """
+
+        html += """
+        </table>
+        </div>
+        """
+
+    html += """
         <h2>Detailed Testcase Breakdown</h2>
 
+        <div class="table-container">
         <table>
             <tr>
                 <th>Priority</th>
@@ -113,6 +197,10 @@ def generate_html_report(testcases, final_order, explanations):
 
     html += """
         </table>
+        </div>
+    """
+
+    html += """
     </body>
     </html>
     """
@@ -121,5 +209,4 @@ def generate_html_report(testcases, final_order, explanations):
     with report_path.open("w", encoding="utf-8") as f:
         f.write(html)
 
-    print(f"\nHTML report saved at: {report_path}\n")
     return report_path

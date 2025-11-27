@@ -1,22 +1,35 @@
 import json
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 
-def _memory_path() -> Path:
+def _memory_path(dataset_name: Optional[str] = None) -> Path:
+	"""Get memory file path for a dataset.
+	
+	Args:
+		dataset_name: Name of dataset (small, medium, large). If None, uses generic 'memory.json'
+		
+	Returns:
+		Path to the memory file
+	"""
 	base = Path(__file__).resolve().parent.parent
+	if dataset_name:
+		return base / f"{dataset_name}_memory.json"
 	return base / "memory.json"
 
 
-def load_feedback() -> List[Dict[str, Any]]:
-	"""Load a list of feedback entries from `memory.json`.
+def load_feedback(dataset_name: Optional[str] = None) -> List[Dict[str, Any]]:
+	"""Load a list of feedback entries from dataset-specific memory file.
 
 	If the file is missing, it will be created with an empty list and an empty
 	list will be returned. If the file contains a dict with a top-level
 	"feedback" list, that list will be returned. On parse errors an empty
 	list is returned.
+	
+	Args:
+		dataset_name: Name of dataset (small, medium, large) to load feedback for
 	"""
-	path = _memory_path()
+	path = _memory_path(dataset_name)
 	if not path.exists():
 		try:
 			path.write_text("[]", encoding="utf-8")
@@ -37,9 +50,16 @@ def load_feedback() -> List[Dict[str, Any]]:
 	return []
 
 
-def save_feedback(test_id: str, result: Any) -> None:
+def save_feedback(test_id: str, result: Any, dataset_name: Optional[str] = None) -> None:
+	"""Save feedback entry to dataset-specific memory file.
 	
-	path = _memory_path()
+	Args:
+		test_id: The test ID
+		result: The result data (typically {"status": "pass" or "fail"})
+		dataset_name: Name of dataset (small, medium, large) to save feedback for
+	"""
+	
+	path = _memory_path(dataset_name)
 	if not path.exists():
 		try:
 			path.write_text("[]", encoding="utf-8")

@@ -11,7 +11,7 @@ from agent.planner_agent import PlannerAgent
 
 
 def load_testcases() -> List[Dict[str, Any]]:
-    """Load testcases from data/testcases.json."""
+    
     base = Path(__file__).resolve().parent.parent
     path = base / "data" / "testcases.json"
     try:
@@ -32,16 +32,18 @@ def parse_llm_output(text: str) -> List[int]:
     return []
 
 
-def prioritize_tests(change_summary: str, feedback_history: List[Dict[str, Any]]):
-    # Load testcases
-    testcases = load_testcases()
+def prioritize_tests(change_summary: str, feedback_history: List[Dict[str, Any]], testcases: List[Dict[str, Any]] = None):
+    
+    if testcases is None:
+        testcases = load_testcases()
+    
     agent = TestAgent(testcases)
 
-    # 1. LLM prioritization
+    # 1. LLM prioritisation
     raw_output = agent.prioritize(change_summary, feedback_history)
     llm_priority = parse_llm_output(raw_output)
 
-    # 2. Risk scoring + reason collection
+    # 2. RIsk Scoring
     scored = []
     risk_scores = {}
     risk_reasons = {}
@@ -81,5 +83,5 @@ def prioritize_tests(change_summary: str, feedback_history: List[Dict[str, Any]]
     strategy = planner.decide_strategy(change_summary, feedback_history)
     print("Planned Testing Strategy:\n", strategy)
 
-    # Return everything needed for reports
-    return corrected, explanations_dict, testcases
+    
+    return corrected, explanations_dict, testcases 

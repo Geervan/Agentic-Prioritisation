@@ -1,8 +1,8 @@
 {
-  "1": "Login is a fundamental and critical user flow, essential for accessing any part of the application, and could be impacted by underlying API changes.",
-  "2": "This test failed previously and directly relates to user input validation, a process often reliant on API calls that could be impacted by the error handling refactor.",
-  "4": "Profile updates involve crucial data persistence via API calls, making it highly susceptible to the refactor of API client error handling, even though it passed previously.",
-  "5": "This test failed previously and its core functionality, autocomplete, is heavily reliant on rapid API interactions, making it highly vulnerable to the API client changes.",
-  "3": "While important, dashboard navigation passed previously and is less likely to be directly affected by API client error handling unless specific navigation points rely on volatile API data.",
-  "6": "This test passed previously and checks a static link, which is very unlikely to be impacted by changes to API client error handling or retry logic."
+  "1": "This test is a critical path for user access and needs re-verification due to recent API client error handling changes.",
+  "2": "This critical login page test previously failed, indicating an existing issue that must be prioritized for resolution and re-verification given the API client changes.",
+  "4": "Profile updates typically involve significant API interaction for data persistence, making it important to confirm functionality after API client modifications.",
+  "5": "This test failed previously and likely relies on backend data or API calls for autocomplete suggestions, warranting attention after API client changes.",
+  "6": "As a simple static link, this test has a low likelihood of being impacted by backend API client changes and previously passed.",
+  "3": "This test covers general navigation, which is less likely to be directly affected by API client error handling changes compared to tests involving data submission or retrieval."
 }

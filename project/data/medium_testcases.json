@@ -1,0 +1,652 @@
+[
+  {
+    "id": 1,
+    "name": "testGetFilenames",
+    "component": "DauxHelper",
+    "ui_element": "unknown",
+    "selector": "php_unit_DauxHelper_testGetFilenames",
+    "execution_time": 4.69,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2,
+    "name": "testAddPage",
+    "component": "Processor",
+    "ui_element": "unknown",
+    "selector": "php_unit_Processor_testAddPage",
+    "execution_time": 4.18,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 3,
+    "name": "testCreateResponse",
+    "component": "Server",
+    "ui_element": "unknown",
+    "selector": "php_unit_Server_testCreateResponse",
+    "execution_time": 3.47,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 4,
+    "name": "testCreateHierarchy",
+    "component": "BuilderIntegration",
+    "ui_element": "unknown",
+    "selector": "php_unit_BuilderIntegration_testCreateHierarchy",
+    "execution_time": 1.47,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 5,
+    "name": "testRemoveSorting",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testRemoveSorting",
+    "execution_time": 2.21,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 6,
+    "name": "testGetOrCreateDirNew",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreateDirNew",
+    "execution_time": 1.31,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 7,
+    "name": "testGetOrCreateDirExisting",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreateDirExisting",
+    "execution_time": 3.51,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 8,
+    "name": "testGetOrCreatePage",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreatePage",
+    "execution_time": 3.26,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 9,
+    "name": "testChangeUri",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testChangeUri",
+    "execution_time": 0.65,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 10,
+    "name": "testGetOrCreatePageAutoMarkdown",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreatePageAutoMarkdown",
+    "execution_time": 4.8,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 11,
+    "name": "testGetOrCreateIndexPage",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreateIndexPage",
+    "execution_time": 0.97,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 12,
+    "name": "testGetOrCreatePageExisting",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreatePageExisting",
+    "execution_time": 2.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 13,
+    "name": "testGetOrCreateRawPage",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testGetOrCreateRawPage",
+    "execution_time": 2.9,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 14,
+    "name": "testUnicodeFilenames",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testUnicodeFilenames",
+    "execution_time": 4.05,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 15,
+    "name": "testIgnoredFiles",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testIgnoredFiles",
+    "execution_time": 2.26,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 16,
+    "name": "testIndexFrontMatter",
+    "component": "Builder",
+    "ui_element": "unknown",
+    "selector": "php_unit_Builder_testIndexFrontMatter",
+    "execution_time": 4.98,
+    "last_result": "fail",
+    "flaky": true
+  },
+  {
+    "id": 17,
+    "name": "testAttributes",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testAttributes",
+    "execution_time": 4.25,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 18,
+    "name": "testAttributeIncorrect",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testAttributeIncorrect",
+    "execution_time": 3.46,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 19,
+    "name": "testEmptyContent",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testEmptyContent",
+    "execution_time": 1.35,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 20,
+    "name": "testNoAttributes",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testNoAttributes",
+    "execution_time": 4.99,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 21,
+    "name": "testAttributeOverride",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testAttributeOverride",
+    "execution_time": 0.69,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 22,
+    "name": "testContentPreserved",
+    "component": "Content",
+    "ui_element": "unknown",
+    "selector": "php_unit_Content_testContentPreserved",
+    "execution_time": 3.24,
+    "last_result": "fail",
+    "flaky": true
+  },
+  {
+    "id": 23,
+    "name": "testSort",
+    "component": "Directory",
+    "ui_element": "unknown",
+    "selector": "php_unit_Directory_testSort",
+    "execution_time": 0.86,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 24,
+    "name": "testHotPath",
+    "component": "Root",
+    "ui_element": "unknown",
+    "selector": "php_unit_Root_testHotPath",
+    "execution_time": 4.37,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 25,
+    "name": "testClientOptions",
+    "component": "Api",
+    "ui_element": "unknown",
+    "selector": "php_unit_Api_testClientOptions",
+    "execution_time": 4.63,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 26,
+    "name": "testDetailsToExpand",
+    "component": "DetailsToExpand",
+    "ui_element": "unknown",
+    "selector": "php_unit_DetailsToExpand_testDetailsToExpand",
+    "execution_time": 2.83,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 27,
+    "name": "testConfiguration",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testConfiguration",
+    "execution_time": 4.54,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 28,
+    "name": "testPublishAllPages",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testPublishAllPages",
+    "execution_time": 4.53,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 29,
+    "name": "testUpdatePublishedPages",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testUpdatePublishedPages",
+    "execution_time": 2.61,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 30,
+    "name": "testDeletePages",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testDeletePages",
+    "execution_time": 1.62,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 31,
+    "name": "testWarnAboutDelete",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testWarnAboutDelete",
+    "execution_time": 3.81,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 32,
+    "name": "testFindRootByAncestor",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testFindRootByAncestor",
+    "execution_time": 3.96,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 33,
+    "name": "testCreateRootAndPublishAllPages",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testCreateRootAndPublishAllPages",
+    "execution_time": 2.64,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 34,
+    "name": "testCreateRootWithSiblingSpaceAndPublishAllPages",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testCreateRootWithSiblingSpaceAndPublishAllPages",
+    "execution_time": 2.27,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 35,
+    "name": "testRootNotFound",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testRootNotFound",
+    "execution_time": 2.63,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 36,
+    "name": "testRootNotFoundButFoundSiblings",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testRootNotFoundButFoundSiblings",
+    "execution_time": 3.61,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 37,
+    "name": "testPublishAttachments",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testPublishAttachments",
+    "execution_time": 4.39,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 38,
+    "name": "testMixed",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testMixed",
+    "execution_time": 1.47,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 39,
+    "name": "testHTMLConfigCreation",
+    "component": "Config",
+    "ui_element": "unknown",
+    "selector": "php_unit_Config_testHTMLConfigCreation",
+    "execution_time": 1.64,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 40,
+    "name": "testEditOn",
+    "component": "Config",
+    "ui_element": "unknown",
+    "selector": "php_unit_Config_testEditOn",
+    "execution_time": 1.15,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 41,
+    "name": "testGenerateSinglePage",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testGenerateSinglePage",
+    "execution_time": 2.12,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 42,
+    "name": "testGenerateAnalytics",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testGenerateAnalytics",
+    "execution_time": 3.28,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 43,
+    "name": "testGenerateSinglePageWithoutSearch",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testGenerateSinglePageWithoutSearch",
+    "execution_time": 1.15,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 44,
+    "name": "testGenerateSidebarLinks",
+    "component": "Generator",
+    "ui_element": "link",
+    "selector": "php_unit_Generator_testGenerateSidebarLinks",
+    "execution_time": 4.73,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 45,
+    "name": "testGenerateLandingPage",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testGenerateLandingPage",
+    "execution_time": 3.44,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 46,
+    "name": "testGenerateRawPage",
+    "component": "Generator",
+    "ui_element": "unknown",
+    "selector": "php_unit_Generator_testGenerateRawPage",
+    "execution_time": 3.16,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 47,
+    "name": "testNoTOCByDefault",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testNoTOCByDefault",
+    "execution_time": 4.61,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 48,
+    "name": "testShouldAddTOCWhenAutoTOCisOn",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testShouldAddTOCWhenAutoTOCisOn",
+    "execution_time": 4.65,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 49,
+    "name": "testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
+    "execution_time": 1.33,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 50,
+    "name": "testTOCToken",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testTOCToken",
+    "execution_time": 3.12,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 51,
+    "name": "testUnicodeTOC",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testUnicodeTOC",
+    "execution_time": 2.74,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 52,
+    "name": "testDuplicatedTOC",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testDuplicatedTOC",
+    "execution_time": 1.45,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 53,
+    "name": "testEscapedTOC",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testEscapedTOC",
+    "execution_time": 4.2,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 54,
+    "name": "testQuotesWorkCorrectly",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testQuotesWorkCorrectly",
+    "execution_time": 1.02,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 55,
+    "name": "testTranslate",
+    "component": "Translate",
+    "ui_element": "unknown",
+    "selector": "php_unit_Translate_testTranslate",
+    "execution_time": 0.7,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 56,
+    "name": "testRenderAdmonition",
+    "component": "AdmonitionRenderer",
+    "ui_element": "unknown",
+    "selector": "php_unit_AdmonitionRenderer_testRenderAdmonition",
+    "execution_time": 1.7,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 57,
+    "name": "testRendering",
+    "component": "ContentType",
+    "ui_element": "unknown",
+    "selector": "php_unit_ContentType_testRendering",
+    "execution_time": 1.31,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 58,
+    "name": "testRenderImage",
+    "component": "ImageRenderer",
+    "ui_element": "unknown",
+    "selector": "php_unit_ImageRenderer_testRenderImage",
+    "execution_time": 0.54,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 59,
+    "name": "testRenderLink",
+    "component": "LinkRenderer",
+    "ui_element": "link",
+    "selector": "php_unit_LinkRenderer_testRenderLink",
+    "execution_time": 3.7,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 60,
+    "name": "testNoTOCByDefault",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testNoTOCByDefault",
+    "execution_time": 2.16,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 61,
+    "name": "testTOCToken",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testTOCToken",
+    "execution_time": 2.63,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 62,
+    "name": "testShouldAddTOCWhenAutoTOCisOn",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testShouldAddTOCWhenAutoTOCisOn",
+    "execution_time": 0.66,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 63,
+    "name": "testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
+    "component": "TableOfContents",
+    "ui_element": "unknown",
+    "selector": "php_unit_TableOfContents_testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
+    "execution_time": 4.68,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 64,
+    "name": "testRenderLink",
+    "component": "AdmonitionRenderer",
+    "ui_element": "link",
+    "selector": "php_unit_AdmonitionRenderer_testRenderLink",
+    "execution_time": 2.11,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 65,
+    "name": "testRenderLink",
+    "component": "LinkRenderer",
+    "ui_element": "link",
+    "selector": "php_unit_LinkRenderer_testRenderLink",
+    "execution_time": 1.25,
+    "last_result": "pass",
+    "flaky": false
+  }
+]

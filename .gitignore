@@ -6,3 +6,4 @@ __pycache__/
 reports/
 project/.env
 project/core/__pycache__/prioritizer.cpython-314.pyc
+project/app
