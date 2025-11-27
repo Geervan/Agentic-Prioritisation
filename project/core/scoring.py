@@ -1,3 +1,9 @@
+def _extract_keywords(text: str) -> set:
+    """Extract meaningful keywords from text."""
+    stop_words = {"the", "a", "an", "and", "or", "but", "in", "on", "at", "to", "for", "of", "with", "by"}
+    words = set(text.lower().replace("_", " ").replace(".", " ").split())
+    return {w for w in words if w not in stop_words and len(w) > 2}
+
 def compute_risk_score(testcase, change_summary, feedback_history):
     """Compute traditional risk score (LEGACY - backward compatible).
     
@@ -8,17 +14,37 @@ def compute_risk_score(testcase, change_summary, feedback_history):
     """
     score = 0
     reasons = []
+    
+    summary_keywords = _extract_keywords(change_summary)
 
     # ---- 1. Component + UI relevance ----
     if testcase["component"].lower() in change_summary.lower():
         score += 5
         reasons.append("Component changed")
+        
+    # [NEW] Name Keyword Matching
+    name_keywords = _extract_keywords(testcase["name"])
+    common_keywords = name_keywords.intersection(summary_keywords)
+    if common_keywords:
+        score += 3 * len(common_keywords)
+        reasons.append(f"Keywords match: {', '.join(list(common_keywords)[:3])}")
+
+    # [NEW] Action Matching
+    action_match_count = 0
+    for action in testcase.get("actions", []):
+        action_keywords = _extract_keywords(action)
+        if action_keywords.intersection(summary_keywords):
+            action_match_count += 1
+            
+    if action_match_count > 0:
+        score += 2 * action_match_count
+        reasons.append(f"Action relevance ({action_match_count})")
 
     if testcase["ui_element"] in ["textbox", "button", "dropdown"]:
         score += 2
         reasons.append("Important UI element")
 
-    if testcase["selector"] in change_summary:
+    if testcase.get("selector", "") in change_summary:
         score += 3
         reasons.append("Selector match")
 

@@ -1,651 +1,900 @@
 [
   {
-    "id": 1,
-    "name": "testGetFilenames",
-    "component": "DauxHelper",
-    "ui_element": "unknown",
-    "selector": "php_unit_DauxHelper_testGetFilenames",
-    "execution_time": 4.69,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 2,
-    "name": "testAddPage",
-    "component": "Processor",
-    "ui_element": "unknown",
-    "selector": "php_unit_Processor_testAddPage",
-    "execution_time": 4.18,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 3,
-    "name": "testCreateResponse",
-    "component": "Server",
-    "ui_element": "unknown",
-    "selector": "php_unit_Server_testCreateResponse",
-    "execution_time": 3.47,
+    "id": 100,
+    "name": "Example 1: Hidden Element",
+    "component": "Dynamic Loading SpecPage",
+    "actions": [
+      "visit.page",
+      "check.element"
+    ],
+    "ui_element": "checkbox",
+    "execution_time": 2.34,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 4,
-    "name": "testCreateHierarchy",
-    "component": "BuilderIntegration",
-    "ui_element": "unknown",
-    "selector": "php_unit_BuilderIntegration_testCreateHierarchy",
-    "execution_time": 1.47,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 5,
-    "name": "testRemoveSorting",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testRemoveSorting",
-    "execution_time": 2.21,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 6,
-    "name": "testGetOrCreateDirNew",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreateDirNew",
-    "execution_time": 1.31,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 7,
-    "name": "testGetOrCreateDirExisting",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreateDirExisting",
-    "execution_time": 3.51,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 8,
-    "name": "testGetOrCreatePage",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreatePage",
-    "execution_time": 3.26,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 9,
-    "name": "testChangeUri",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testChangeUri",
-    "execution_time": 0.65,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 10,
-    "name": "testGetOrCreatePageAutoMarkdown",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreatePageAutoMarkdown",
-    "execution_time": 4.8,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 11,
-    "name": "testGetOrCreateIndexPage",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreateIndexPage",
-    "execution_time": 0.97,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 12,
-    "name": "testGetOrCreatePageExisting",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreatePageExisting",
-    "execution_time": 2.18,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 13,
-    "name": "testGetOrCreateRawPage",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testGetOrCreateRawPage",
-    "execution_time": 2.9,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 14,
-    "name": "testUnicodeFilenames",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testUnicodeFilenames",
-    "execution_time": 4.05,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 15,
-    "name": "testIgnoredFiles",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testIgnoredFiles",
-    "execution_time": 2.26,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 16,
-    "name": "testIndexFrontMatter",
-    "component": "Builder",
-    "ui_element": "unknown",
-    "selector": "php_unit_Builder_testIndexFrontMatter",
-    "execution_time": 4.98,
-    "last_result": "fail",
-    "flaky": true
-  },
-  {
-    "id": 17,
-    "name": "testAttributes",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testAttributes",
-    "execution_time": 4.25,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 18,
-    "name": "testAttributeIncorrect",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testAttributeIncorrect",
-    "execution_time": 3.46,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 19,
-    "name": "testEmptyContent",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testEmptyContent",
-    "execution_time": 1.35,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 20,
-    "name": "testNoAttributes",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testNoAttributes",
-    "execution_time": 4.99,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 21,
-    "name": "testAttributeOverride",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testAttributeOverride",
-    "execution_time": 0.69,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 22,
-    "name": "testContentPreserved",
-    "component": "Content",
-    "ui_element": "unknown",
-    "selector": "php_unit_Content_testContentPreserved",
-    "execution_time": 3.24,
-    "last_result": "fail",
-    "flaky": true
-  },
-  {
-    "id": 23,
-    "name": "testSort",
-    "component": "Directory",
-    "ui_element": "unknown",
-    "selector": "php_unit_Directory_testSort",
-    "execution_time": 0.86,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 24,
-    "name": "testHotPath",
-    "component": "Root",
-    "ui_element": "unknown",
-    "selector": "php_unit_Root_testHotPath",
+    "id": 101,
+    "name": "Example 2: Rendered After The Fact",
+    "component": "Dynamic Loading SpecPage",
+    "actions": [
+      "visit.page",
+      "check.element"
+    ],
+    "ui_element": "checkbox",
     "execution_time": 4.37,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 25,
-    "name": "testClientOptions",
-    "component": "Api",
-    "ui_element": "unknown",
-    "selector": "php_unit_Api_testClientOptions",
-    "execution_time": 4.63,
+    "id": 102,
+    "name": "Succeeded",
+    "component": "Login SpecPage",
+    "actions": [
+      "visit.page",
+      "check.element"
+    ],
+    "ui_element": "checkbox",
+    "execution_time": 4.96,
     "last_result": "fail",
     "flaky": false
   },
   {
-    "id": 26,
-    "name": "testDetailsToExpand",
-    "component": "DetailsToExpand",
-    "ui_element": "unknown",
-    "selector": "php_unit_DetailsToExpand_testDetailsToExpand",
-    "execution_time": 2.83,
-    "last_result": "fail",
+    "id": 103,
+    "name": "Failed",
+    "component": "Login SpecPage",
+    "actions": [
+      "visit.page",
+      "check.element"
+    ],
+    "ui_element": "checkbox",
+    "execution_time": 3.64,
+    "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 27,
-    "name": "testConfiguration",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testConfiguration",
-    "execution_time": 4.54,
+    "id": 104,
+    "name": "Accept Alert (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.29,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 105,
+    "name": "Press Escape (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.32,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 106,
+    "name": "Upload JPG (Mock)",
+    "component": "FileUploadPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "file.select",
+      "click.upload"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.93,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 107,
+    "name": "Press Tab (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.55,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 108,
+    "name": "Switch Window Context (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.26,
     "last_result": "pass",
     "flaky": true
   },
   {
-    "id": 28,
-    "name": "testPublishAllPages",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testPublishAllPages",
-    "execution_time": 4.53,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 29,
-    "name": "testUpdatePublishedPages",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testUpdatePublishedPages",
-    "execution_time": 2.61,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 30,
-    "name": "testDeletePages",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testDeletePages",
-    "execution_time": 1.62,
+    "id": 109,
+    "name": "Verify Profile Link (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.85,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 31,
-    "name": "testWarnAboutDelete",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testWarnAboutDelete",
-    "execution_time": 3.81,
+    "id": 110,
+    "name": "Select Option 1 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.25,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 111,
+    "name": "Hover User 3 (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.43,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 112,
+    "name": "Uncheck All (Mock)",
+    "component": "CheckboxesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.16,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 113,
+    "name": "Press Backspace (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.1,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 114,
+    "name": "Press Tab (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.36,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 115,
+    "name": "Upload JPG (Mock)",
+    "component": "FileUploadPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "file.select",
+      "click.upload"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.57,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 116,
+    "name": "Accept Alert (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.7,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 117,
+    "name": "Select Option 1 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.84,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 118,
+    "name": "Hover User 2 (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.79,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 119,
+    "name": "Select Default (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 120,
+    "name": "Login Empty Password (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.67,
     "last_result": "fail",
     "flaky": false
   },
   {
-    "id": 32,
-    "name": "testFindRootByAncestor",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testFindRootByAncestor",
-    "execution_time": 3.96,
+    "id": 121,
+    "name": "Assert Element Visible (Mock)",
+    "component": "DynamicLoadingPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.05,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 122,
+    "name": "Login Bruteforce (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.33,
     "last_result": "fail",
     "flaky": false
   },
   {
-    "id": 33,
-    "name": "testCreateRootAndPublishAllPages",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testCreateRootAndPublishAllPages",
-    "execution_time": 2.64,
+    "id": 123,
+    "name": "Press Escape (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.66,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 124,
+    "name": "Check All (Mock)",
+    "component": "CheckboxesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.checkbox",
+      "assert.checked"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.11,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 125,
+    "name": "Login Empty Username (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.68,
     "last_result": "fail",
     "flaky": false
   },
   {
-    "id": 34,
-    "name": "testCreateRootWithSiblingSpaceAndPublishAllPages",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testCreateRootWithSiblingSpaceAndPublishAllPages",
-    "execution_time": 2.27,
+    "id": 126,
+    "name": "Login SQL Injection (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.35,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 127,
+    "name": "Dismiss Alert (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.85,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 35,
-    "name": "testRootNotFound",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testRootNotFound",
-    "execution_time": 2.63,
+    "id": 128,
+    "name": "Wait For Element (Mock)",
+    "component": "DynamicLoadingPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.87,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 36,
-    "name": "testRootNotFoundButFoundSiblings",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testRootNotFoundButFoundSiblings",
-    "execution_time": 3.61,
+    "id": 129,
+    "name": "Select Option 1 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.53,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 37,
-    "name": "testPublishAttachments",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testPublishAttachments",
-    "execution_time": 4.39,
+    "id": 130,
+    "name": "Close New Tab (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.84,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 131,
+    "name": "Assert Element Hidden (Mock)",
+    "component": "DynamicLoadingPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.81,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 38,
-    "name": "testMixed",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testMixed",
+    "id": 132,
+    "name": "Hover User 1 (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.6,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 133,
+    "name": "Hover User 1 (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.71,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 134,
+    "name": "Open New Tab (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.02,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 135,
+    "name": "Switch Window Context (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.5,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 136,
+    "name": "Upload Empty File (Mock)",
+    "component": "FileUploadPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "file.select",
+      "click.upload"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.58,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 137,
+    "name": "Wait For Element (Mock)",
+    "component": "DynamicLoadingPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.1,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 138,
+    "name": "Press Backspace (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.64,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 139,
+    "name": "Select Option 2 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.88,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 140,
+    "name": "Upload Large File (Mock)",
+    "component": "FileUploadPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "file.select",
+      "click.upload"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.98,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 141,
+    "name": "Select Default (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 142,
+    "name": "Dismiss Alert (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.73,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 143,
+    "name": "Verify Profile Link (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 144,
+    "name": "Check All (Mock)",
+    "component": "CheckboxesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.checkbox",
+      "assert.checked"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.32,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 145,
+    "name": "Select Option 2 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 146,
+    "name": "Type In Prompt (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.28,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 147,
+    "name": "Login Empty Password (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.01,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 148,
+    "name": "Type In Prompt (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.49,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 149,
+    "name": "Select Option 2 (Mock)",
+    "component": "DropdownPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.55,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 150,
+    "name": "Switch Window Context (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.16,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 151,
+    "name": "Hover User 1 (Mock)",
+    "component": "HoversPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 152,
+    "name": "Type In Prompt (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.53,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 153,
+    "name": "Close New Tab (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.93,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 154,
+    "name": "Login Empty Username (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 5.58,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 155,
+    "name": "Login Empty Username (Mock)",
+    "component": "LoginPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.3,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 156,
+    "name": "Switch Window Context (Mock)",
+    "component": "WindowsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.89,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 157,
+    "name": "Dismiss Alert (Mock)",
+    "component": "JavaScriptAlertsPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
     "execution_time": 1.47,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 39,
-    "name": "testHTMLConfigCreation",
-    "component": "Config",
-    "ui_element": "unknown",
-    "selector": "php_unit_Config_testHTMLConfigCreation",
-    "execution_time": 1.64,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 40,
-    "name": "testEditOn",
-    "component": "Config",
-    "ui_element": "unknown",
-    "selector": "php_unit_Config_testEditOn",
-    "execution_time": 1.15,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 41,
-    "name": "testGenerateSinglePage",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testGenerateSinglePage",
-    "execution_time": 2.12,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 42,
-    "name": "testGenerateAnalytics",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testGenerateAnalytics",
-    "execution_time": 3.28,
+    "id": 158,
+    "name": "Wait For Element (Mock)",
+    "component": "DynamicLoadingPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.79,
     "last_result": "pass",
     "flaky": false
   },
   {
-    "id": 43,
-    "name": "testGenerateSinglePageWithoutSearch",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testGenerateSinglePageWithoutSearch",
-    "execution_time": 1.15,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 44,
-    "name": "testGenerateSidebarLinks",
-    "component": "Generator",
-    "ui_element": "link",
-    "selector": "php_unit_Generator_testGenerateSidebarLinks",
-    "execution_time": 4.73,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 45,
-    "name": "testGenerateLandingPage",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testGenerateLandingPage",
-    "execution_time": 3.44,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 46,
-    "name": "testGenerateRawPage",
-    "component": "Generator",
-    "ui_element": "unknown",
-    "selector": "php_unit_Generator_testGenerateRawPage",
-    "execution_time": 3.16,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 47,
-    "name": "testNoTOCByDefault",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testNoTOCByDefault",
-    "execution_time": 4.61,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 48,
-    "name": "testShouldAddTOCWhenAutoTOCisOn",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testShouldAddTOCWhenAutoTOCisOn",
-    "execution_time": 4.65,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 49,
-    "name": "testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
-    "execution_time": 1.33,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 50,
-    "name": "testTOCToken",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testTOCToken",
-    "execution_time": 3.12,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 51,
-    "name": "testUnicodeTOC",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testUnicodeTOC",
-    "execution_time": 2.74,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 52,
-    "name": "testDuplicatedTOC",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testDuplicatedTOC",
-    "execution_time": 1.45,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 53,
-    "name": "testEscapedTOC",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testEscapedTOC",
-    "execution_time": 4.2,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 54,
-    "name": "testQuotesWorkCorrectly",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testQuotesWorkCorrectly",
-    "execution_time": 1.02,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 55,
-    "name": "testTranslate",
-    "component": "Translate",
-    "ui_element": "unknown",
-    "selector": "php_unit_Translate_testTranslate",
-    "execution_time": 0.7,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 56,
-    "name": "testRenderAdmonition",
-    "component": "AdmonitionRenderer",
-    "ui_element": "unknown",
-    "selector": "php_unit_AdmonitionRenderer_testRenderAdmonition",
-    "execution_time": 1.7,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 57,
-    "name": "testRendering",
-    "component": "ContentType",
-    "ui_element": "unknown",
-    "selector": "php_unit_ContentType_testRendering",
-    "execution_time": 1.31,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 58,
-    "name": "testRenderImage",
-    "component": "ImageRenderer",
-    "ui_element": "unknown",
-    "selector": "php_unit_ImageRenderer_testRenderImage",
-    "execution_time": 0.54,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 59,
-    "name": "testRenderLink",
-    "component": "LinkRenderer",
-    "ui_element": "link",
-    "selector": "php_unit_LinkRenderer_testRenderLink",
-    "execution_time": 3.7,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 60,
-    "name": "testNoTOCByDefault",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testNoTOCByDefault",
-    "execution_time": 2.16,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 61,
-    "name": "testTOCToken",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testTOCToken",
-    "execution_time": 2.63,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 62,
-    "name": "testShouldAddTOCWhenAutoTOCisOn",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testShouldAddTOCWhenAutoTOCisOn",
-    "execution_time": 0.66,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 63,
-    "name": "testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
-    "component": "TableOfContents",
-    "ui_element": "unknown",
-    "selector": "php_unit_TableOfContents_testShouldNotAddTOCWhenAutoTOCisOnAndTOCisPresent",
-    "execution_time": 4.68,
-    "last_result": "fail",
-    "flaky": false
-  },
-  {
-    "id": 64,
-    "name": "testRenderLink",
-    "component": "AdmonitionRenderer",
-    "ui_element": "link",
-    "selector": "php_unit_AdmonitionRenderer_testRenderLink",
-    "execution_time": 2.11,
-    "last_result": "pass",
-    "flaky": false
-  },
-  {
-    "id": 65,
-    "name": "testRenderLink",
-    "component": "LinkRenderer",
-    "ui_element": "link",
-    "selector": "php_unit_LinkRenderer_testRenderLink",
-    "execution_time": 1.25,
+    "id": 159,
+    "name": "Press Tab (Mock)",
+    "component": "KeyPressesPage",
+    "actions": [
+      "visit.page",
+      "find.element",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.99,
     "last_result": "pass",
     "flaky": false
   }

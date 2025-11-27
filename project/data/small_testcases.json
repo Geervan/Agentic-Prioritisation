@@ -1,262 +1,400 @@
 [
   {
-    "name": "/",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "#username-helper-text",
-    "execution_time": 3.22,
+    "id": 1,
+    "name": "Should Validate That We Can Continue Shopping",
+    "component": "Cart Summary PagePage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.5,
     "last_result": "pass",
-    "flaky": false,
-    "id": 1
+    "flaky": false
   },
   {
-    "name": "/signup",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "#firstName-helper-text",
-    "execution_time": 3.85,
-    "last_result": "pass",
-    "flaky": false,
-    "id": 2
+    "id": 2,
+    "name": "Should Validate That We Can Go From The Cart To The Checkout Page",
+    "component": "Cart Summary PagePage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.38,
+    "last_result": "fail",
+    "flaky": false
   },
   {
-    "name": "/bankaccounts",
-    "component": "ui",
-    "ui_element": "input",
-    "selector": "#bankaccount-bankName-input-helper-text",
-    "execution_time": 3.38,
+    "id": 3,
+    "name": "Should Validate That A Product Can Be Removed From The Cart",
+    "component": "Cart Summary PagePage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.66,
     "last_result": "pass",
-    "flaky": false,
-    "id": 3
+    "flaky": false
   },
   {
-    "name": "@usersSearch",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": ".MuiBackdrop-root",
+    "id": 4,
+    "name": "Should Be Able To Test Loading Of Login Page",
+    "component": "Checkout CompletePage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.4,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 5,
+    "name": "Should Validate We Get An Error If We Don Not Provide All Personal Information",
+    "component": "Checkout Personal InfoPage",
+    "actions": [
+      "CheckoutPersonalInfoPage.submitPersonalInfo",
+      "CheckoutPersonalInfoPage.waitForIsShown",
+      "CheckoutPersonalInfoPage.getErrorMessage"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.76,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 6,
+    "name": "Should Validate That We Can Cancel The First Checkout",
+    "component": "Checkout Personal InfoPage",
+    "actions": [
+      "CartSummaryPage.isDisplayed",
+      "CheckoutPersonalInfoPage.cancelCheckout",
+      "CartSummaryPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.51,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 7,
+    "name": "Should Be Able To Continue The Checkout",
+    "component": "Checkout Personal InfoPage",
+    "actions": [
+      "CheckoutPersonalInfoPage.submitPersonalInfo",
+      "CheckoutSummaryPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 8,
+    "name": "Should Validate That We Can Continue Shopping",
+    "component": "Checkout SummaryPage",
+    "actions": [
+      "CheckoutSummaryPage.finishCheckout",
+      "CheckoutCompletePage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.84,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 9,
+    "name": "Should Validate That We Can Cancel Checkout And Go To The Inventory Page",
+    "component": "Checkout SummaryPage",
+    "actions": [
+      "CheckoutSummaryPage.cancelCheckout",
+      "SwagOverviewPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.79,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 10,
+    "name": "Should Validate That We Have 1 Product In Our Checkout Overview",
+    "component": "Checkout SummaryPage",
+    "actions": [
+      "CheckoutSummaryPage.getSwagAmount"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.73,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 11,
+    "name": "Should Be Able To Test Loading Of Login Page",
+    "component": "LoginpagePage",
+    "actions": [
+      "LoginPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.68,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 12,
+    "name": "Should Be Able To Login With A Standard User",
+    "component": "LoginpagePage",
+    "actions": [
+      "LoginPage.signIn",
+      "SwagOverviewPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.17,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 13,
+    "name": "Should Not Be Able To Login With A Locked User",
+    "component": "LoginpagePage",
+    "actions": [
+      "LoginPage.signIn",
+      "LoginPage.isErrorMessageDisplayed",
+      "LoginPage.getErrorMessage"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.91,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 14,
+    "name": "Should Be Able To The Swag Items Overview Page",
+    "component": "MenuPage",
+    "actions": [
+      "MenuPage.openInventoryList",
+      "SwagOverviewPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.93,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 15,
+    "name": "Should Be Able To Open The About Page",
+    "component": "MenuPage",
+    "actions": [
+      "MenuPage.openAboutPage",
+      "CartSummaryPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.3,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 16,
+    "name": "Should Be Able To Log Out",
+    "component": "MenuPage",
+    "actions": [
+      "MenuPage.logout",
+      "LoginPage.waitForIsShown"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.69,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 17,
+    "name": "Should Be Able To Clear The Cart",
+    "component": "MenuPage",
+    "actions": [
+      "AppHeaderPage.getCartAmount",
+      "MenuPage.restAppState",
+      "AppHeaderPage.getCartAmount"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.6,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 18,
+    "name": "Should Validate That We Can Go Back From The Details To The Inventory Page",
+    "component": "Swag Item DetailsPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
     "execution_time": 3.88,
     "last_result": "pass",
-    "flaky": false,
-    "id": 4
+    "flaky": false
   },
   {
-    "name": "@allUsers",
-    "component": "ui",
-    "ui_element": "input",
-    "selector": "#transaction-create-amount-input-helper-text",
-    "execution_time": 1.97,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 5
-  },
-  {
-    "name": "submits a transaction payment and verifies the deposit for the receiver",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "[data-test=sidenav-user-balance]",
-    "execution_time": 3.3,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 6
-  },
-  {
-    "name": "@createTransaction",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "[data-test=sidenav-user-balance]",
-    "execution_time": 2.22,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 7
-  },
-  {
-    "name": "@updateNotification",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "@preDismissedNotificationCount",
-    "execution_time": 2.01,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 8
-  },
-  {
-    "name": "@publicTransactions",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": ".MuiBackdrop-root",
-    "execution_time": 1.91,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 9
-  },
-  {
-    "name": "transaction-item-",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "[data-test*='transaction-item']",
-    "execution_time": 2.1,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 10
-  },
-  {
-    "name": "closes date range picker modal",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": ".react-calendar",
-    "execution_time": 4.0,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 11
-  },
-  {
-    "name": "@${feed.routeAlias}",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "@unfilteredResults",
-    "execution_time": 1.88,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 12
-  },
-  {
-    "name": "?",
-    "component": "ui",
-    "ui_element": "unknown",
-    "selector": "@unfilteredResults",
-    "execution_time": 3.91,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 13
-  },
-  {
-    "name": "should display user setting form errors",
-    "component": "ui",
-    "ui_element": "input",
-    "selector": "#user-settings-${field}Name-input-helper-text",
-    "execution_time": 3.8,
+    "id": 19,
+    "name": "Should Validate That A Product Can Be Added To A Cart",
+    "component": "Swag Item DetailsPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.35,
     "last_result": "pass",
-    "flaky": false,
-    "id": 14
+    "flaky": false
   },
   {
-    "name": "should allow a visitor to login, onboard and logout",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 3.79,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 15
-  },
-  {
-    "name": "shows onboarding",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 1.86,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 16
-  },
-  {
-    "name": "should allow a visitor to login, onboard and logout",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 2.5,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 17
-  },
-  {
-    "name": "shows onboarding",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 3.17,
-    "last_result": "fail",
-    "flaky": true,
-    "id": 18
-  },
-  {
-    "name": "shows onboarding",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 1.19,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 19
-  },
-  {
-    "name": "should allow a visitor to login, onboard and logout",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 1.79,
-    "last_result": "fail",
-    "flaky": false,
-    "id": 20
-  },
-  {
-    "name": "should allow a visitor to login, onboard and logout",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 3.34,
+    "id": 20,
+    "name": "Should Validate That A Product Can Be Removed From The Cart",
+    "component": "Swag Item DetailsPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 1.28,
     "last_result": "pass",
-    "flaky": false,
-    "id": 21
+    "flaky": false
   },
   {
-    "name": "shows onboarding",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 1.61,
+    "id": 21,
+    "name": "Should Validate That All Products Are Present",
+    "component": "Swag Items ListPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.34,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 22,
+    "name": "Should Validate That The Details Of A Product Can Be Opened",
+    "component": "Swag Items ListPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.25,
     "last_result": "fail",
-    "flaky": false,
-    "id": 22
+    "flaky": false
   },
   {
-    "name": "should allow a visitor to login, onboard and logout",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 1.02,
+    "id": 23,
+    "name": "Should Validate That A Product Can Be Added To The Cart",
+    "component": "Swag Items ListPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 2.48,
     "last_result": "pass",
-    "flaky": false,
-    "id": 23
+    "flaky": false
   },
   {
-    "name": "shows onboarding",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "Get Started",
-    "execution_time": 2.96,
+    "id": 24,
+    "name": "Should Validate That A Product Can Be Removed From The Cart",
+    "component": "Swag Items ListPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.35,
     "last_result": "pass",
-    "flaky": false,
-    "id": 24
+    "flaky": false
   },
   {
-    "name": "verifies signed in user does not have a bank account",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "[data-test=\"sidenav-bankaccounts\"]",
-    "execution_time": 1.62,
+    "id": 25,
+    "name": "Should Be Able To Open The Cart Summary Page",
+    "component": "Swag Items ListPage",
+    "actions": [
+      "browser.open",
+      "element.interact"
+    ],
+    "ui_element": "generic_element",
+    "execution_time": 3.4,
     "last_result": "pass",
-    "flaky": false,
-    "id": 25
+    "flaky": false
   },
   {
-    "name": "verifies signed in user does not have any notifications",
-    "component": "ui-auth-providers",
-    "ui_element": "unknown",
-    "selector": "[data-test=\"sidenav-notifications\"]",
-    "execution_time": 3.31,
+    "id": 26,
+    "name": "Reset App State (Mock)",
+    "component": "MenuPage",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.65,
     "last_result": "pass",
-    "flaky": false,
-    "id": 26
+    "flaky": false
+  },
+  {
+    "id": 27,
+    "name": "Continue Shopping (Mock)",
+    "component": "CartSummaryPage",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.71,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 28,
+    "name": "Add to Cart (Mock)",
+    "component": "SwagItemDetailsPage",
+    "actions": [
+      "visit.page",
+      "click.cartItem",
+      "assert.itemPresent"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.88,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 29,
+    "name": "Fill Information (Mock)",
+    "component": "CheckoutPersonalInfoPage",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.text"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.01,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 30,
+    "name": "Sort Name Z to A (Mock)",
+    "component": "SwagItemsListPage",
+    "actions": [
+      "visit.page",
+      "click.sort",
+      "select.option",
+      "assert.sorted"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.25,
+    "last_result": "pass",
+    "flaky": false
   }
 ]

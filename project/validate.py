@@ -113,7 +113,8 @@ def get_agentic_order(testcases: List[Dict[str, Any]]) -> List[int]:
     """
     try:
         # Prepare inputs for prioritizer
-        change_summary = "Generic code change for validation."
+        # [UPDATED] Align with fault injection (Login/Checkout) to validate scoring
+        change_summary = "Refactored Login and Checkout components to improve security and performance."
         feedback_history = load_feedback()
 
         # Call prioritizer (returns: corrected list, explanations dict, testcases)

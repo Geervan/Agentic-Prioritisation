@@ -39,13 +39,11 @@ REPORT_DIR.mkdir(exist_ok=True)  # Ensure it exists
 DATASET_PATHS = {
     "small": DATA_DIR / "small_testcases.json",
     "medium": DATA_DIR / "medium_testcases.json",
-    "large": DATA_DIR / "large_testcases.json",
 }
 
 APP_ROOTS = {
-    "small": APPS_DIR / "cypress-realworld-app",
-    "medium": APPS_DIR / "opencart",
-    "large": APPS_DIR / "moodle",
+    "small": APPS_DIR / "sample-app-web",
+    "medium": APPS_DIR / "the-internet",
 }
 
 FIXTURE_TESTCASES = DATA_DIR / "testcases.json"
@@ -68,6 +66,9 @@ def auto_extract_if_missing(skip_extraction: bool = False) -> bool:
     
     # Process each dataset
     for dataset_key, dataset_path in DATASET_PATHS.items():
+        if dataset_key == "large":
+            continue  # Skip large dataset extraction as requested
+            
         should_extract = not dataset_path.exists()
         if dataset_path.exists():
             try:
@@ -83,13 +84,13 @@ def auto_extract_if_missing(skip_extraction: bool = False) -> bool:
         if should_extract and APP_ROOTS[dataset_key].exists():
             try:
                 if dataset_key == "small":
-                    logger.info("Extracting Cypress tests (small)...")
-                    from extraction.extract_cypress_tests import generate_small_testcases
-                    generate_small_testcases(APP_ROOTS[dataset_key], out_path=DATASET_PATHS[dataset_key])
+                    logger.info("Extracting SauceDemo tests (small)...")
+                    from extraction.extract_saucedemo_tests import main as extract_saucedemo
+                    extract_saucedemo(str(APP_ROOTS[dataset_key]), str(DATASET_PATHS[dataset_key]))
                 elif dataset_key == "medium":
-                    logger.info("Extracting OpenCart tests (medium)...")
-                    from extraction.extract_opencart_phpunit_tests import main as extract_opencart_phpunit
-                    extract_opencart_phpunit(argv=[str(APP_ROOTS[dataset_key]), "--out", str(DATASET_PATHS[dataset_key])])
+                    logger.info("Extracting The Internet tests (medium)...")
+                    from extraction.extract_theinternet_tests import main as extract_theinternet
+                    extract_theinternet(str(APP_ROOTS[dataset_key]), str(DATASET_PATHS[dataset_key]))
                 elif dataset_key == "large":
                     logger.info("Extracting Moodle tests (large)...")
                     from extraction.extract_moodle_phpunit_tests import main as extract_moodle_phpunit
@@ -221,14 +222,36 @@ def run_prioritization(testcases: list, dataset_name: str, enable_validation: bo
     else:
         print()
     
-    # Simulate test execution results (all tests for comprehensive validation)
-    sample_size = len(prioritized_ids)  # Execute all tests for research validation
-    results = {
-        test_id: random.choice(["pass", "fail"]) 
-        for test_id in prioritized_ids[:sample_size]
-    }
+    # Simulate test execution with REALISTIC FLAKINESS
+    # High-risk tests (Login/Checkout) fail 60% of the time
+    # Other tests fail 5% of the time (baseline noise)
+    sample_size = len(prioritized_ids)
+    test_map = {tc["id"]: tc for tc in testcases}
+    results = {}
+    
+    for test_id in prioritized_ids[:sample_size]:
+        tc = test_map.get(test_id, {})
+        base_result = tc.get("last_result", "pass")
+        
+        # Determine if this is a high-risk test (Login/Checkout)
+        test_name = tc.get("name", "").lower()
+        component = tc.get("component", "").lower()
+        is_high_risk = "login" in test_name or "checkout" in test_name or "login" in component or "checkout" in component
+        
+        # Apply flakiness probability
+        if base_result == "fail":
+            # Tests marked as "fail" have a chance to actually fail
+            fail_probability = 0.60 if is_high_risk else 0.05
+        else:
+            # Tests marked as "pass" rarely fail (noise)
+            fail_probability = 0.05 if is_high_risk else 0.01
+        
+        # Simulate execution with flakiness
+        actual_result = "fail" if random.random() < fail_probability else "pass"
+        results[test_id] = actual_result
+    
     passed = sum(1 for r in results.values() if r == "pass")
-    logger.info(f"Simulated execution: {passed}/{sample_size} passed")
+    logger.info(f"Simulated execution: {passed}/{sample_size} passed (with realistic flakiness)")
     
     # Save results to dataset-specific memory file
     for test_id, result_status in results.items():
