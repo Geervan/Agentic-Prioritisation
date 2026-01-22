@@ -1,0 +1,2473 @@
+[
+  {
+    "id": 2000,
+    "name": "http://localhost:3000",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2001,
+    "name": "gets a list of bank accounts for user",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.67,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2002,
+    "name": "gets a bank account",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.15,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2003,
+    "name": "creates a new bank account",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.57,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2004,
+    "name": "deletes a bank account",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.79,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2005,
+    "name": "gets a list of bank accounts for user",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.67,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2006,
+    "name": "creates a new bank account",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.57,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2007,
+    "name": "deletes a bank account",
+    "component": "Bank Accounts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.79,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2008,
+    "name": "http://localhost:3000",
+    "component": "Bank Transfer API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2009,
+    "name": "gets a list of bank transfers for user",
+    "component": "Bank Transfer API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.97,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2010,
+    "name": "http://localhost:3000",
+    "component": "Comments API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2011,
+    "name": "gets a list of comments for a transaction",
+    "component": "Comments API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.94,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2012,
+    "name": "creates a new comment for a transaction",
+    "component": "Comments API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2013,
+    "name": "http://localhost:3000",
+    "component": "Contacts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2014,
+    "name": "gets a list of contacts by username",
+    "component": "Contacts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.21,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2015,
+    "name": "creates a new contact",
+    "component": "Contacts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.1,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2016,
+    "name": "errors when invalid contactUserId",
+    "component": "Contacts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.52,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2017,
+    "name": "deletes a contact",
+    "component": "Contacts API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.53,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2018,
+    "name": "http://localhost:3000",
+    "component": "Likes API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2019,
+    "name": "gets a list of likes for a transaction",
+    "component": "Likes API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.64,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2020,
+    "name": "creates a new like for a transaction",
+    "component": "Likes API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.7,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2021,
+    "name": "http://localhost:3000",
+    "component": "Notifications API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2022,
+    "name": "gets a list of notifications for a user",
+    "component": "Notifications API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.98,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2023,
+    "name": "creates notifications for transaction, like and comment",
+    "component": "Notifications API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.53,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2024,
+    "name": "updates a notification",
+    "component": "Notifications API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.85,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2025,
+    "name": "errors when invalid field sent",
+    "component": "Notifications API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.98,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2026,
+    "name": "http://localhost:3000",
+    "component": "Test Data API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2027,
+    "name": "http://localhost:3000",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2028,
+    "name": "gets a list of transactions for user (default)",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.25,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2029,
+    "name": "gets a list of pending request transactions for user",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.0,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2030,
+    "name": "gets a list of pending request transactions for user between a time range",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.23,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2031,
+    "name": "gets a list of transactions for users list of contacts, page one",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.28,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2032,
+    "name": "gets a list of transactions for users list of contacts, page two",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2033,
+    "name": "gets a list of public transactions",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.75,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2034,
+    "name": "creates a new payment",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.44,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2035,
+    "name": "creates a new request",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.46,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2036,
+    "name": "updates a transaction",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.27,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2037,
+    "name": "errors when an invalid field sent",
+    "component": "Transactions API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.44,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2038,
+    "name": "http://localhost:3000",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2039,
+    "name": "gets a list of users",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.53,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2040,
+    "name": "gets a user",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.63,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2041,
+    "name": "errors when invalid userId",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.84,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2042,
+    "name": "gets a user profile by username",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.68,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2043,
+    "name": "gets users by email",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.58,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2044,
+    "name": "gets users by phone number",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.61,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2045,
+    "name": "gets users by username",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.5,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2046,
+    "name": "creates a new user",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.75,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2047,
+    "name": "creates a new user with an account balance in cents",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.48,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2048,
+    "name": "errors when an invalid field sent",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.44,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2049,
+    "name": "updates a user",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.49,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2050,
+    "name": "errors when an invalid field sent",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.44,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2051,
+    "name": "logs in as a user",
+    "component": "Users API",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2052,
+    "name": "create new transaction",
+    "component": "Cypress Studio Demo",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.24,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2053,
+    "name": "create new bank account",
+    "component": "Cypress Studio Demo",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.42,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2054,
+    "name": "/",
+    "component": "Auth0",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2055,
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "Auth0",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2056,
+    "name": "shows onboarding",
+    "component": "Auth0",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2057,
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2058,
+    "name": "@createBankAccount",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.2,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2059,
+    "name": "shows onboarding",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2060,
+    "name": "/",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2061,
+    "name": "shows onboarding",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2062,
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "AWS Cognito, programmatic login (cypress.config.ts#cognito_programmatic_login: true)",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2063,
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "Google",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2064,
+    "name": "@createBankAccount",
+    "component": "Google",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.2,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2065,
+    "name": "shows onboarding",
+    "component": "Google",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2066,
+    "name": "should allow a visitor to login, onboard and logout",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.34,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2067,
+    "name": "@createBankAccount",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.2,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2068,
+    "name": "shows onboarding",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2069,
+    "name": "/",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2070,
+    "name": "verifies signed in user does not have a bank account",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2071,
+    "name": "verifies signed in user does not have any notifications",
+    "component": "Okta",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.13,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2072,
+    "name": "should redirect unauthenticated user to signin page",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.51,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2073,
+    "name": "/personal",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.04,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2074,
+    "name": "should redirect to the home page after login",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.08,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2075,
+    "name": "should remember a user for 30 days after login",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.9,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2076,
+    "name": "should allow a visitor to sign-up, login, and logout",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.75,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2077,
+    "name": "/",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2078,
+    "name": "@signup",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.38,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2079,
+    "name": "@gqlCreateBankAccountMutation",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.4,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2080,
+    "name": "should display login errors",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "fill.username",
+      "fill.password",
+      "click.login"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.78,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2081,
+    "name": "/",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2082,
+    "name": "should display signup errors",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.28,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2083,
+    "name": "/signup",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.11,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2084,
+    "name": "should error for an invalid user",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.7,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2085,
+    "name": "should error for an invalid password for existing user",
+    "component": "User Sign-up and Login",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.62,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2086,
+    "name": "creates a new bank account",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.57,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2087,
+    "name": "@getNotifications",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2088,
+    "name": "@gqlCreateBankAccountMutation",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.4,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2089,
+    "name": "should display bank account form errors",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.33,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2090,
+    "name": "/bankaccounts",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2091,
+    "name": "soft deletes a bank account",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.64,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2092,
+    "name": "/bankaccounts",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2093,
+    "name": "@gqlDeleteBankAccountMutation",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.17,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2094,
+    "name": "renders an empty bank account list state with onboarding modal",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.23,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2095,
+    "name": "@getNotifications",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2096,
+    "name": "/bankaccounts",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2097,
+    "name": "@getNotifications",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2098,
+    "name": "@gqlListBankAccountQuery",
+    "component": "Bank Accounts",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.82,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2099,
+    "name": "navigates to the new transaction form, selects a user and submits a transaction payment",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.77,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2100,
+    "name": "@allUsers",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2101,
+    "name": "@usersSearch",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.2,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2102,
+    "name": "@personalTransactions",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.59,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2103,
+    "name": "navigates to the new transaction form, selects a user and submits a transaction request",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.56,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2104,
+    "name": "@allUsers",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2105,
+    "name": "@createTransaction",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.97,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2106,
+    "name": "displays new transaction errors",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.01,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2107,
+    "name": "@allUsers",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2108,
+    "name": "submits a transaction payment and verifies the deposit for the receiver",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.53,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2109,
+    "name": "@createTransaction",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.97,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2110,
+    "name": "submits a transaction request and accepts the request for the receiver",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2111,
+    "name": "@createTransaction",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.97,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2112,
+    "name": "@personalTransactions",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.59,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2113,
+    "name": "@updateTransaction",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2114,
+    "name": "@allUsers",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2115,
+    "name": "@usersSearch",
+    "component": "New Transaction",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.2,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2116,
+    "name": "User A likes a transaction of User B; User B gets notification that User A liked transaction ",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.59,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2117,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2118,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2119,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2120,
+    "name": "/notifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.18,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2121,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2122,
+    "name": "@updateNotification",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.6,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2123,
+    "name": "User C likes a transaction between User A and User B; User A and User B get notifications that User C liked transaction",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.36,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2124,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2125,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2126,
+    "name": "User A comments on a transaction of User B; User B gets notification that User A commented on their transaction",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.49,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2127,
+    "name": "@postComment",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.comment",
+      "click.post"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.1,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2128,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2129,
+    "name": "User C comments on a transaction between User A and User B; User A and B get notifications that User C commented on their transaction",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.41,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2130,
+    "name": "@postComment",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.comment",
+      "click.post"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.1,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2131,
+    "name": "@getNotifications",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2132,
+    "name": "User A sends a payment to User B",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.82,
+    "last_result": "fail",
+    "flaky": true
+  },
+  {
+    "id": 2133,
+    "name": "@createTransaction",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.97,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2134,
+    "name": "User A sends a payment request to User C",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.43,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2135,
+    "name": "@createTransaction",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.97,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2136,
+    "name": "renders an empty notifications state",
+    "component": "Notifications",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.93,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2137,
+    "name": "toggles the navigation drawer",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.68,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2138,
+    "name": "@notifications",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.58,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2139,
+    "name": "@publicTransactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2140,
+    "name": "renders transactions item variations in feed",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.49,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2141,
+    "name": "/",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.6,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2142,
+    "name": "@notifications",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.58,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2143,
+    "name": "@mockedPublicTransactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.45,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2144,
+    "name": "transaction-item-",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.68,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2145,
+    "name": "closes date range picker modal",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.8,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2146,
+    "name": "?",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.18,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2147,
+    "name": "mine feed only shows personal transactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.37,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2148,
+    "name": "@personalTransactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.59,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2149,
+    "name": "first five items belong to contacts in public feed",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 1.41,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2150,
+    "name": "@publicTransactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2151,
+    "name": "friends feed only shows contact transactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.83,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2152,
+    "name": "@contactsTransactions",
+    "component": "Transaction Feed",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.17,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2153,
+    "name": "@personalTransactions",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.59,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2154,
+    "name": "transactions navigation tabs are hidden on a transaction view page",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.53,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2155,
+    "name": "likes a transaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.59,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2156,
+    "name": "@getTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.56,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2157,
+    "name": "comments on a transaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.05,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2158,
+    "name": "@getTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.56,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2159,
+    "name": "accepts a transaction request",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.14,
+    "last_result": "fail",
+    "flaky": false
+  },
+  {
+    "id": 2160,
+    "name": "@getTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.56,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2161,
+    "name": "@updateTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2162,
+    "name": "rejects a transaction request",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.65,
+    "last_result": "fail",
+    "flaky": true
+  },
+  {
+    "id": 2163,
+    "name": "@getTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.56,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2164,
+    "name": "@updateTransaction",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "fill.amount",
+      "fill.note",
+      "click.pay"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.81,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2165,
+    "name": "does not display accept/reject buttons on completed request",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.96,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2166,
+    "name": "@getNotifications",
+    "component": "Transaction View",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2167,
+    "name": "renders the user settings form",
+    "component": "User Settings",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 2.62,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2168,
+    "name": "@getNotifications",
+    "component": "User Settings",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.01,
+    "last_result": "pass",
+    "flaky": true
+  },
+  {
+    "id": 2169,
+    "name": "should display user setting form errors",
+    "component": "User Settings",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.16,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2170,
+    "name": "updates first name, last name, email and phone number",
+    "component": "User Settings",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 3.88,
+    "last_result": "pass",
+    "flaky": false
+  },
+  {
+    "id": 2171,
+    "name": "@updateUser",
+    "component": "User Settings",
+    "actions": [
+      "visit.page",
+      "click.element",
+      "assert.visible"
+    ],
+    "ui_element": "button",
+    "execution_time": 4.5,
+    "last_result": "pass",
+    "flaky": true
+  }
+]
