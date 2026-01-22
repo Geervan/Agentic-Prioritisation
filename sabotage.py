@@ -321,13 +321,23 @@ def main() -> int:
     # Iterate through selected datasets
     for dataset_name in target_datasets:
         # Autonomous Monte Carlo: Pick a random scenario for this run
+        # Autonomous Monte Carlo: Pick TWO scenarios for SABOTAGE
+        # 1. The "Lie" (What we tell the Agent)
         scenario = random.choice(SCENARIOS)
-        # logger.info(f"🎲 MONTE CARLO: Selected Scenario '{scenario.name}'")
-        # logger.info(f"   Context: {scenario.change_summary}")
+        
+        # 2. The "Truth" (What actually breaks) - ensuring it's DIFFERENT
+        remaining_scenarios = [s for s in SCENARIOS if s.name != scenario.name]
+        validation_scenario = random.choice(remaining_scenarios)
+        
+        print("\n\n" + "!" * 60)
+        print(f"⚠️  SABOTAGE RUN INTIATED")
+        print(f"🤥  LYING TO AGENT: 'I changed {scenario.name}'")
+        print(f"💣  ACTUAL DAMAGE:  Broken {validation_scenario.name}")
+        print("!" * 60 + "\n")
 
-        # 1. Force Re-Extraction with Scenario Injection
+        # 1. Force Re-Extraction with TRUTH (Validation Scenario)
         if not args.fixture and not args.no_extract:
-             extract_dataset(dataset_name, keywords=scenario.keywords)
+             extract_dataset(dataset_name, keywords=validation_scenario.keywords)
 
         # 2. Load the (now injected) dataset
         testcases = load_dataset(dataset_name, use_fixture=args.fixture)
@@ -335,12 +345,12 @@ def main() -> int:
             logger.error(f"No testcases available for dataset '{dataset_name}'. Skipping.")
             continue
 
-        # 3. Run Prioritization with Dynamic Context
+        # 3. Run Prioritization with LIE (Agent Scenario)
         run_prioritization(
             testcases, 
             dataset_name, 
             change_summary=scenario.change_summary,
-            keywords=scenario.keywords,
+            keywords=validation_scenario.keywords, # Validation keywords needed for simulation to match ground truth
             enable_validation=not args.no_validate
         )
 

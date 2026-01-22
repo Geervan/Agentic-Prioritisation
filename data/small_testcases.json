@@ -10,7 +10,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.78,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -24,7 +24,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.67,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": true
   },
   {
@@ -38,7 +38,7 @@
     ],
     "ui_element": "button",
     "execution_time": 3.15,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -52,7 +52,7 @@
     ],
     "ui_element": "button",
     "execution_time": 2.57,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -80,7 +80,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.67,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": true
   },
   {
@@ -94,7 +94,7 @@
     ],
     "ui_element": "button",
     "execution_time": 2.57,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -122,7 +122,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.78,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": false
   },
   {
@@ -165,7 +165,7 @@
     ],
     "ui_element": "button",
     "execution_time": 2.94,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": true
   },
   {
@@ -194,7 +194,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.78,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -208,7 +208,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.21,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -222,7 +222,7 @@
     ],
     "ui_element": "button",
     "execution_time": 3.1,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -236,7 +236,7 @@
     ],
     "ui_element": "button",
     "execution_time": 4.52,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": true
   },
   {
@@ -279,7 +279,7 @@
     ],
     "ui_element": "button",
     "execution_time": 3.64,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": false
   },
   {
@@ -294,7 +294,7 @@
     ],
     "ui_element": "button",
     "execution_time": 4.7,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": false
   },
   {
@@ -322,7 +322,7 @@
     ],
     "ui_element": "button",
     "execution_time": 4.98,
-    "last_result": "fail",
+    "last_result": "pass",
     "flaky": false
   },
   {
@@ -337,7 +337,7 @@
     ],
     "ui_element": "button",
     "execution_time": 4.53,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": false
   },
   {
@@ -393,7 +393,7 @@
     ],
     "ui_element": "button",
     "execution_time": 1.78,
-    "last_result": "pass",
+    "last_result": "fail",
     "flaky": false
   },
   {
